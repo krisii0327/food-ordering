@@ -4,7 +4,6 @@ import toast from "react-hot-toast";
 import { useState } from "react";
 import MenuItemTile from "@/components/menu/MenuItemTile";
 import Image from "next/image";
-import FlyingButton from 'react-flying-item'
 
 export default function MenuItem(menuItem) {
     const {image, name, description, basePrice, sizes, extraIngredientPrices} = menuItem;
@@ -78,11 +77,11 @@ export default function MenuItem(menuItem) {
                                 </div> 
                             )}
                             <div className="bg-primary rounded-xl" onClick={handleAddToCartButtonClick}>
-                                <FlyingButton targetTop={'5%'} targetLeft={'95%'} src={image}>
+                                <div>
                                     <div className="text-white sticky bottom-2" >
                                         Add to cart ${selectedPrice}
                                     </div>
-                                </FlyingButton>
+                                </div>
                             </div>
                             <button className="mt-2" onClick={() => setShowPopup(false)} type="button">Cancel</button>
                         </div>
