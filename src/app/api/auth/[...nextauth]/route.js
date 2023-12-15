@@ -55,7 +55,6 @@ export async function isAdmin() {
   }
 
   const userInfo = await UserInfo.findOne({email: userEmail});
-  const userInfo2 = await UserInfo.find({email: userEmail});
   
   if(!userInfo) {
     return false;
