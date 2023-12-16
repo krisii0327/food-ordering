@@ -76,9 +76,9 @@ export default function MenuItem(menuItem) {
                                     ))}
                                 </div> 
                             )}
-                            <div className="bg-primary rounded-xl" onClick={handleAddToCartButtonClick}>
-                                <div>
-                                    <div className="text-white sticky bottom-2" >
+                            <div className="sticky bottom-2 bg-primary rounded-xl" onClick={handleAddToCartButtonClick}>
+                                <div className="button" >
+                                    <div className="text-white">
                                         Add to cart ${selectedPrice}
                                     </div>
                                 </div>
